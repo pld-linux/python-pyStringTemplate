@@ -9,6 +9,7 @@ Source0:	http://www.antlr.org/download/%{pp_subname}-%{version}.tar.gz
 # Source0-md5:	c94060929bc03425181284a961968e5f
 URL:		http://www.stringtemplate.org/
 %pyrequires_eq	python-modules
+Requires:	python-antlr
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
