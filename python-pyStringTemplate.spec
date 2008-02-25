@@ -2,12 +2,12 @@
 Summary:	Template engine for generating any formatted text output
 Summary(pl.UTF-8):	Silnik szablonów do generowania dowolnie sformatowanego wyjścia tekstowego
 Name:		python-%{pp_subname}
-Version:	2.2
+Version:	3.1
 Release:	1
 License:	BSD
 Group:		Libraries/Python
-Source0:	http://www.antlr.org/download/%{pp_subname}-%{version}.tar.gz
-# Source0-md5:	c94060929bc03425181284a961968e5f
+Source0:	http://www.stringtemplate.org/download/%{pp_subname}-%{version}.tar.gz
+# Source0-md5:	5ab737068cc4abbd679af508ebffaaae
 URL:		http://www.stringtemplate.org/
 BuildRequires:	python >= 1:2.5
 BuildRequires:	rpm-pythonprov
@@ -40,13 +40,11 @@ charakterystyczną jest to, że w przeciwieństwie do innych silników
 %setup -q -n %{pp_subname}-%{version}
 
 %build
-cd src
 python setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-cd src
 python setup.py install --optimize=2 --root=$RPM_BUILD_ROOT
 %py_postclean
 
@@ -55,6 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc doc/*
-%{py_sitescriptdir}/stringtemplate
+%doc README.txt CHANGES.txt
+%{py_sitescriptdir}/stringtemplate3
 %{py_sitescriptdir}/*egg-info
