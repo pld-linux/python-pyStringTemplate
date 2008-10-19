@@ -3,7 +3,7 @@ Summary:	Template engine for generating any formatted text output
 Summary(pl.UTF-8):	Silnik szablonów do generowania dowolnie sformatowanego wyjścia tekstowego
 Name:		python-%{pp_subname}
 Version:	3.1
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries/Python
 Source0:	http://www.stringtemplate.org/download/%{pp_subname}-%{version}.tar.gz
