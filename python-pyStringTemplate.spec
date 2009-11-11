@@ -2,12 +2,12 @@
 Summary:	Template engine for generating any formatted text output
 Summary(pl.UTF-8):	Silnik szablonów do generowania dowolnie sformatowanego wyjścia tekstowego
 Name:		python-%{pp_subname}
-Version:	3.1
-Release:	2
+Version:	3.2
+Release:	0.b1.1
 License:	BSD
 Group:		Libraries/Python
-Source0:	http://www.stringtemplate.org/download/%{pp_subname}-%{version}.tar.gz
-# Source0-md5:	5ab737068cc4abbd679af508ebffaaae
+Source0:	http://www.stringtemplate.org/download/%{pp_subname}-%{version}b1.tar.gz
+# Source0-md5:	be68025b8349445ed799b87b8e366d2a
 URL:		http://www.stringtemplate.org/
 BuildRequires:	python >= 1:2.5
 BuildRequires:	rpm-pythonprov
@@ -37,7 +37,7 @@ charakterystyczną jest to, że w przeciwieństwie do innych silników
 ściśle narzuca rozdzielenie model-widok.
 
 %prep
-%setup -q -n %{pp_subname}-%{version}
+%setup -q -n stringtemplate3-%{version}b1
 
 %build
 python setup.py build
