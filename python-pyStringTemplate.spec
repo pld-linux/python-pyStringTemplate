@@ -9,6 +9,7 @@ Group:		Libraries/Python
 Source0:	http://www.stringtemplate.org/download/%{pp_subname}-%{version}b1.tar.gz
 # Source0-md5:	be68025b8349445ed799b87b8e366d2a
 URL:		http://www.stringtemplate.org/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python >= 1:2.5
 BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
